@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #F0F7EE,
+        #C4D7F2,
+        #AFDEDC
+    );
+
+    min-height: 100vh;
+    color: #2B2B2B;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 80px;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #2B2B2B;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #776871;
+}
+
+/* HERO SECTION */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    height: 85vh;
+
+    padding: 20px;
+}
+
+.hero-content{
+    max-width: 800px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero span{
+    color: #776871;
+}
+
+.hero h2{
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.hero p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+.hero-button{
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background-color: #AFDEDC;
+
+    color: #2B2B2B;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover{
+    background-color: #91A8A4;
+    transform: translateY(-5px);
+}
