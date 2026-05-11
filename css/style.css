@@ -8,14 +8,16 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(
-        135deg,
-        #F0F7EE,
-        #C4D7F2,
-        #AFDEDC
-    );
+
+    background-image: url('../images/background.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     min-height: 100vh;
+
     color: #2B2B2B;
 }
 
@@ -61,38 +63,49 @@ body{
     justify-content: center;
     align-items: center;
 
-    text-align: center;
+    min-height: 85vh;
 
-    height: 85vh;
-
-    padding: 20px;
+    padding: 50px 80px;
 }
 
-.hero-content{
-    max-width: 800px;
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 80px;
+
+    width: 100%;
+    max-width: 1300px;
 }
 
-.hero h1{
+.hero-text{
+    flex: 1;
+}
+
+.hero-text h1{
     font-size: 4rem;
     margin-bottom: 20px;
 }
 
-.hero span{
-    color: #776871;
+.hero-text span{
+    color: #4d3a44;
 }
 
-.hero h2{
+.hero-text h2{
     font-size: 2rem;
     font-weight: 500;
 
     margin-bottom: 25px;
 }
 
-.hero p{
+.hero-text p{
     font-size: 1.1rem;
     line-height: 1.8;
 
     margin-bottom: 40px;
+
+    max-width: 600px;
 }
 
 .hero-button{
@@ -115,5 +128,19 @@ body{
 
 .hero-button:hover{
     background-color: #91A8A4;
+
     transform: translateY(-5px);
+}
+
+.hero-image img{
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid rgba(255,255,255,0.5);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
