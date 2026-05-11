@@ -1,4 +1,4 @@
-\# Personal Portfolio Website
+# Personal Portfolio Website
 
 
 
@@ -6,43 +6,43 @@ A modern personal portfolio website built using HTML, CSS, and JavaScript to sho
 
 
 
-\## Features
+## Features
 
 
 
-\- Responsive modern UI design
+- Responsive modern UI design
 
-\- Personal introduction section
+- Personal introduction section
 
-\- Project showcase section
+- Project showcase section
 
-\- Skills and tools section
+- Skills and tools section
 
-\- Contact information
+- Contact information
 
-\- Interactive portfolio layout
+- Interactive portfolio layout
 
-\- Clean and minimal interface design
-
-
-
-\## Technologies Used
+- Clean and minimal interface design
 
 
 
-\- HTML5
-
-\- CSS3
-
-\- JavaScript
-
-\- Visual Studio Code
-
-\- Git \& GitHub
+## Technologies Used
 
 
 
-\## Purpose
+- HTML5
+
+- CSS3
+
+- JavaScript
+
+- Visual Studio Code
+
+- Git & GitHub
+
+
+
+## Purpose
 
 
 
@@ -50,7 +50,7 @@ This portfolio website was developed as part of my university coursework and per
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -90,23 +90,23 @@ portfolio/
 
 
 
-\## Future Improvements
+## Future Improvements
 
 
 
-\- Add responsive mobile navigation
+- Add responsive mobile navigation
 
-\- Improve animations and interactions
+- Improve animations and interactions
 
-\- Add project filtering system
+- Add project filtering system
 
-\- Add dark/light mode
+- Add dark/light mode
 
-\- Deploy using GitHub Pages
+- Deploy using GitHub Pages
 
 
 
-\## Author
+## Author
 
 
 
@@ -114,5 +114,5 @@ Lai Yong Kang
 
 
 
-Game Programmer \& Interactive Media Student
+Game Programmer & Interactive Media Student
 
