@@ -50,46 +50,6 @@ This portfolio website was developed as part of my university coursework and per
 
 
 
-## Project Structure
-
-
-
-```plaintext
-
-portfolio/
-
-│
-
-├── css/
-
-│   └── style.css
-
-│
-
-├── js/
-
-│   └── script.js
-
-│
-
-├── images/
-
-│
-
-├── index.html
-
-├── about.html
-
-├── projects.html
-
-├── skills.html
-
-├── contact.html
-
-```
-
-
-
 ## Future Improvements
 
 
