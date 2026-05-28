@@ -948,6 +948,182 @@ body{
     margin-bottom: 22px;
 }
 
+
+/* EDUCATION PAGE */
+
+.education-header{
+    text-align: center;
+
+    padding: 120px 100px 80px;
+}
+
+.education-header h1{
+    font-size: 3.5rem;
+
+    margin-bottom: 25px;
+}
+
+.education-header p{
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 1.1rem;
+
+    line-height: 2;
+
+    color: #444;
+}
+
+.education-row{
+    display: flex;
+
+    align-items: center;
+
+    gap: 70px;
+
+    max-width: 1300px;
+
+    margin: 0 auto 120px auto;
+
+    padding: 0 100px;
+}
+
+.education-row.reverse-row{
+    flex-direction: row-reverse;
+}
+
+.education-image{
+    flex: 1.1;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    padding: 18px;
+    width: fit-content;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    transition: 0.35s;
+}
+
+.education-image:hover{
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,0.14),
+        0 0 20px rgba(175,222,220,0.35);
+}
+
+.education-image img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+.education-content{
+    flex: 1.1;
+}
+
+.education-content h2{
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+
+    color: #2B2B2B;
+
+    white-space: nowrap;
+
+    line-height: 1.3;
+}
+
+.education-content span{
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    font-weight: 600;
+
+    color: #4d3a44;
+}
+
+.education-content p{
+    font-size: 1.05rem;
+
+    line-height: 2;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+/* GRADUATION SECTION */
+
+.graduation-section{
+    max-width: 1400px;
+
+    margin: 0 auto 120px auto;
+
+    text-align: center;
+
+    padding: 0 40px;
+}
+
+.graduation-image{
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0 auto 40px auto;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.graduation-image img{
+    border-radius: 20px;
+
+    object-fit: cover;
+}
+
+.graduation-image img:first-child{
+    width: 430px;
+
+    height: 620px;
+
+    object-position: top;
+}
+
+.graduation-image img:last-child{
+    width: 620px;
+
+    height: 620px;
+}
+
+.graduation-content h2{
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+}
+
+.graduation-content p{
+    font-size: 1.08rem;
+
+    line-height: 2;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    color: #333;
+}
+
 /* ANIMATIONS */
 
 @keyframes slideLeft{
@@ -1079,6 +1255,106 @@ body{
 /* TEXT ANIMATION */
 
 @keyframes aboutTextRight{
+
+    from{
+        opacity: 0;
+
+        transform: translateX(80px);
+    }
+
+    to{
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+}
+
+/* EDUCATION PAGE ANIMATION */
+
+.education-header{
+    opacity: 0;
+
+    animation: riseUp 1.1s ease forwards;
+}
+
+.education-row .education-image{
+    opacity: 0;
+
+    animation: educationImageLeft 1.2s ease forwards;
+}
+
+.education-row .education-content{
+    opacity: 0;
+
+    animation: educationTextRight 1.2s ease forwards;
+}
+
+.graduation-image{
+    opacity: 0;
+
+    animation: educationImageLeft 1.2s ease forwards;
+}
+
+.graduation-content{
+    opacity: 0;
+
+    animation: educationTextRight 1.2s ease forwards;
+}
+
+/* DELAYS */
+
+.education-row:nth-of-type(1) .education-image{
+    animation-delay: 0.3s;
+}
+
+.education-row:nth-of-type(1) .education-content{
+    animation-delay: 0.6s;
+}
+
+.education-row:nth-of-type(2) .education-image{
+    animation-delay: 0.9s;
+}
+
+.education-row:nth-of-type(2) .education-content{
+    animation-delay: 1.2s;
+}
+
+.graduation-image{
+    animation-delay: 1.5s;
+}
+
+.graduation-content{
+    animation-delay: 1.8s;
+}
+
+.education-row:nth-of-type(4) .education-image{
+    animation-delay: 2.1s;
+}
+
+.education-row:nth-of-type(4) .education-content{
+    animation-delay: 2.4s;
+}
+
+/* IMAGE ANIMATION */
+
+@keyframes educationImageLeft{
+
+    from{
+        opacity: 0;
+
+        transform: translateX(-80px);
+    }
+
+    to{
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+}
+
+/* TEXT ANIMATION */
+
+@keyframes educationTextRight{
 
     from{
         opacity: 0;

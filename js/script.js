@@ -8,29 +8,31 @@ window.addEventListener("scroll", () => {
 
     const currentScroll = window.pageYOffset;
 
-    const heroHeight = heroSection.offsetHeight;
+    /* HOME PAGE */
+    if(heroSection){
 
-    // ALWAYS SHOW navbar inside hero section
-    if(currentScroll < heroHeight - 100){
+        const heroHeight = heroSection.offsetHeight;
 
-        navbar.classList.remove("navbar-hidden");
+        /* Always show navbar inside hero section */
+        if(currentScroll < heroHeight - 100){
 
-        return;
+            navbar.classList.remove("navbar-hidden");
+
+            return;
+        }
     }
 
-    // SCROLL DOWN
+    /* Scroll down - hide navbar */
     if(currentScroll > lastScroll){
 
         navbar.classList.add("navbar-hidden");
+    }
 
-    } 
-    
-    // SCROLL UP
+    /* Scroll up - show navbar */
     else{
 
         navbar.classList.remove("navbar-hidden");
     }
 
     lastScroll = currentScroll;
-
 });
