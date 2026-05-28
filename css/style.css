@@ -64,7 +64,7 @@ body{
 
 .nav-links{
     display: flex;
-    gap: 40px;
+    gap: 30px;
 
     list-style: none;
 }
@@ -239,11 +239,25 @@ body{
 .section-title{
     font-size: 2.5rem;
 
-    margin-bottom: 70px;
+    margin-bottom: 18px;
 
     color: #2B2B2B;
 
     font-weight: 700;
+}
+
+.projects-subtitle,
+.skills-subtitle,
+.contact-subtitle{
+    font-size: 1rem;
+
+    color: #555;
+
+    line-height: 1.8;
+
+    max-width: 1000px;
+
+    margin: 0 auto 55px auto;
 }
 
 .projects-container{
@@ -452,16 +466,6 @@ body{
     text-align: center;
 }
 
-.skills-subtitle{
-    font-size: 1rem;
-
-    color: #555;
-
-    margin-bottom: 55px;
-
-    line-height: 1.8;
-}
-
 .skills-container{
     display: grid;
 
@@ -526,6 +530,107 @@ body{
     font-size: 0.95rem;
 
     color: #666;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+    padding: 130px 100px;
+
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.contact-card{
+    width: 320px;
+
+    background: rgba(255,255,255,0.45);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 24px;
+
+    padding: 45px 30px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    transition: 0.35s;
+}
+
+.contact-card:hover{
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,0.14),
+        0 0 20px rgba(175,222,220,0.35);
+}
+
+.contact-card img{
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: contain;
+
+    margin-bottom: 25px;
+}
+
+.contact-card h3{
+    font-size: 1.5rem;
+
+    color: #4d3a44;
+
+    margin-bottom: 15px;
+}
+
+.contact-card p{
+    font-size: 1rem;
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+.contact-button{
+    display: inline-block;
+
+    margin-top: 60px;
+
+    padding: 18px 45px;
+
+    background: #a9d8d8;
+
+    color: #222;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    transition: 0.35s;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.08);
+}
+
+.contact-button:hover{
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 30px rgba(0,0,0,0.15),
+        0 0 20px rgba(175,222,220,0.45);
 }
 
 /* ANIMATIONS */
