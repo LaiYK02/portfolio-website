@@ -217,3 +217,39 @@ if(backToTopBtn){
 
     });
 }
+
+/* =========================
+   CONTACT FORM (EmailJS)
+========================= */
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_2b5ix04",
+            "template_31iequh",
+            this
+        )
+        .then(() => {
+
+            alert("Thank you! Your message has been sent successfully.");
+
+            contactForm.reset();
+
+        })
+        .catch((error) => {
+
+            console.error(error);
+
+            alert("Failed to send message. Please try again.");
+
+        });
+
+    });
+
+}
