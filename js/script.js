@@ -36,6 +36,29 @@ window.addEventListener("scroll", () =>{
     lastScroll = currentScroll;
 });
 
+/* PROJECT PAGE ANIMATIONS */
+
+const projectRows = document.querySelectorAll('.project-row');
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add('show');
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+projectRows.forEach(row => {
+    observer.observe(row);
+});
+
 const imageModal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
 const closeModal = document.querySelector('.close-modal');
