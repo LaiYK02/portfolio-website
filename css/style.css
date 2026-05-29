@@ -204,35 +204,7 @@ body{
     color: #4d3a44;
 }
 
-.hero-button{
-    display: inline-block;
 
-    padding: 18px 45px;
-
-    background-color: #AFDEDC;
-
-    color: #2B2B2B;
-
-    text-decoration: none;
-
-    border-radius: 16px;
-
-    font-weight: 600;
-
-    transition: 0.3s;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-
-    animation: riseUp 1.5s ease;
-}
-
-.hero-button:hover{
-    background-color: #91A8A4;
-
-    transform: translateY(-8px);
-
-    box-shadow: 0 18px 30px rgba(0,0,0,0.18);
-}
 
 /* HERO SOCIAL BAR */
 
@@ -696,39 +668,6 @@ body{
     line-height: 1.7;
 }
 
-.contact-button{
-    display: inline-block;
-
-    margin-top: 60px;
-
-    padding: 18px 45px;
-
-    background: #a9d8d8;
-
-    color: #222;
-
-    font-size: 1rem;
-
-    font-weight: 700;
-
-    border-radius: 18px;
-
-    text-decoration: none;
-
-    transition: 0.35s;
-
-    box-shadow:
-        0 10px 20px rgba(0,0,0,0.08);
-}
-
-.contact-button:hover{
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 18px 30px rgba(0,0,0,0.15),
-        0 0 20px rgba(175,222,220,0.45);
-}
-
 /* FOOTER */
 
 .footer{
@@ -871,10 +810,6 @@ body{
     align-items: center;
 
     gap: 70px;
-}
-
-.reverse-row{
-    flex-direction: row-reverse;
 }
 
 .about-image{
@@ -1367,4 +1302,172 @@ body{
 
         transform: translateX(0);
     }
+}
+
+/* PROJECT PAGE */
+
+.projects-header{
+    text-align: center;
+    padding: 120px 100px 80px;
+}
+
+.projects-header h1{
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+.projects-header p{
+    max-width: 900px;
+    margin: auto;
+    line-height: 2;
+}
+
+.project-row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 1400px;
+    margin: 0 auto 120px auto;
+    padding: 40px 50px;
+
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+
+    border-radius: 35px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
+    transition: 0.35s;
+}
+
+.project-row.reverse-row{
+    flex-direction: row-reverse;
+}
+
+.project-row:hover{
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,0.14),
+        0 0 20px rgba(175,222,220,0.35);
+}
+
+.project-gallery{
+    flex: 1.3;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    background: rgba(255,255,255,0.12);
+
+    padding: 18px;
+
+    border-radius: 25px;
+}
+
+.project-gallery img{
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+.project-gallery img:hover{
+    transform: scale(1.04);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-info{
+    flex: 1;
+}
+
+.project-info h2{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.project-info span{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #4d3a44;
+}
+
+.project-info p{
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.project-features{
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.project-features li{
+    margin-bottom: 8px;
+}
+
+.project-tech{
+    margin-bottom: 30px;
+}
+
+.project-tech span{
+    background: rgba(175,222,220,0.8);
+    padding: 8px 18px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+/* BUTTONS */
+
+.hero-button,
+.contact-button,
+.project-button{
+    display: inline-block;
+
+    padding: 18px 45px;
+
+    background-color: #AFDEDC;
+
+    color: #2B2B2B;
+
+    text-decoration: none;
+
+    border-radius: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+    animation: riseUp 1.5s ease;
+}
+
+.contact-button{
+    margin-top: 60px;
+}
+
+.hero-button:hover,
+.contact-button:hover,
+.project-button:hover{
+    background-color: #91A8A4;
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 30px rgba(0,0,0,0.18);
 }
