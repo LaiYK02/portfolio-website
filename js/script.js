@@ -153,7 +153,6 @@ document.querySelectorAll('.project-gallery').forEach(gallery => {
 
 if(imageModal)
 {
-    const modalImage = document.getElementById('modalImage');
     const closeModal = document.querySelector('.close-modal');
 
     const prevBtn = document.querySelector('.prev-btn');
