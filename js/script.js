@@ -361,3 +361,34 @@ window.addEventListener("scroll", () => {
 });
 
 window.dispatchEvent(new Event("scroll"));
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileNav = document.querySelector(".nav-links");
+
+if(menuToggle && mobileNav){
+
+    menuToggle.addEventListener("click", () => {
+
+        mobileNav.classList.toggle("active");
+
+        if(mobileNav.classList.contains("active")){
+            menuToggle.innerHTML = "✕";
+        }
+        else{
+            menuToggle.innerHTML = "☰";
+        }
+
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mobileNav.classList.remove("active");
+            menuToggle.innerHTML = "☰";
+
+        });
+
+    });
+
+}
