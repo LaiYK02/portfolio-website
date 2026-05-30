@@ -253,3 +253,46 @@ if (contactForm) {
     });
 
 }
+
+/* =========================
+   COPY EMAIL / PHONE
+========================= */
+
+const copyCards = document.querySelectorAll(".copy-card");
+const copyMessage = document.getElementById("copyMessage");
+
+if(copyCards.length && copyMessage){
+
+    copyCards.forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            const text = card.dataset.copy;
+            const type = card.dataset.type;
+
+            navigator.clipboard.writeText(text);
+
+            if(type === "email"){
+
+                copyMessage.textContent =
+                    "✓ Email copied to clipboard!";
+            }
+            else{
+
+                copyMessage.textContent =
+                    "✓ Phone number copied to clipboard!";
+            }
+
+            copyMessage.classList.add("show");
+
+            setTimeout(() => {
+
+                copyMessage.classList.remove("show");
+
+            }, 2500);
+
+        });
+
+    });
+
+}
