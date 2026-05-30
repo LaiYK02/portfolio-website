@@ -28,25 +28,6 @@ body{
     overflow-x: hidden;
 }
 
-.page-fade{
-    opacity: 0;
-    animation: pageFadeIn 0.9s ease forwards;
-}
-
-@keyframes pageFadeIn{
-
-    from{
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
 /* NAVBAR */
 
 .navbar{
@@ -2308,17 +2289,17 @@ body{
 
     .navbar{
         flex-direction: row;
-
         justify-content: space-between;
-
         align-items: center;
 
         padding: 15px 20px;
-        position: fixed;
 
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
+
+        z-index: 1000;
     }
 
     .logo{
@@ -2329,8 +2310,13 @@ body{
         display: block;
         font-size: 2rem;
         position: absolute;
-        right: 20px;
+        right: 15px;
         top: 50%;
+
+        width:40px;
+        height:40px;
+        line-height:40px;
+
         transform: translateY(-50%);
         z-index: 1001;
     }
