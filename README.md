@@ -1,4 +1,4 @@
-\# 🎨 Personal Portfolio Website
+# 🎨 Personal Portfolio Website
 
 
 
@@ -6,7 +6,7 @@ A responsive personal portfolio website developed using HTML, CSS, and JavaScrip
 
 
 
-\## 🌐 Live Website
+## 🌐 Live Website
 
 
 
@@ -18,7 +18,7 @@ https://laiyk02.github.io/portfolio-website/
 
 
 
-\## 📖 About
+## 📖 About
 
 
 
@@ -30,79 +30,79 @@ The portfolio was designed with a modern and responsive user interface to provid
 
 
 
-\---
+---
 
 
 
-\## ✨ Features
+## ✨ Features
 
 
 
-\* Responsive design for desktop and mobile devices
+* Responsive design for desktop and mobile devices
 
-\* Animated page transitions and scroll effects
+* Animated page transitions and scroll effects
 
-\* Interactive project gallery with image previews
+* Interactive project gallery with image previews
 
-\* Personal education timeline
+* Personal education timeline
 
-\* Project showcase section
+* Project showcase section
 
-\* Personal qualities section
+* Personal qualities section
 
-\* Contact form integration using EmailJS
+* Contact form integration using EmailJS
 
-\* Back-to-top navigation
+* Back-to-top navigation
 
-\* Mobile-friendly navigation menu
+* Mobile-friendly navigation menu
 
-\* GitHub project links
-
-
-
-\---
+* GitHub project links
 
 
 
-\## 🛠 Technologies Used
+---
 
 
 
-\### Frontend
+## 🛠 Technologies Used
 
 
 
-\* HTML5
-
-\* CSS3
-
-\* JavaScript (Vanilla JS)
+### Frontend
 
 
 
-\### Tools
+* HTML5
+
+* CSS3
+
+* JavaScript (Vanilla JS)
 
 
 
-\* Visual Studio Code
-
-\* Git
-
-\* GitHub
-
-\* EmailJS
+### Tools
 
 
 
-\---
+* Visual Studio Code
+
+* Git
+
+* GitHub
+
+* EmailJS
 
 
 
-\## 🎮 Featured Projects
+---
 
 
 
-\### Maze Ball Physics Game
+## 🎮 Featured Projects
+
+
+
+### Maze Ball Physics Game
 
 
 
@@ -110,7 +110,7 @@ A 3D physics-based maze game developed using Processing (Java Mode), featuring r
 
 
 
-\### Computer Components Trading System
+### Computer Components Trading System
 
 
 
@@ -118,7 +118,7 @@ A database-driven business management system built with C++ and MySQL for invent
 
 
 
-\### Cathedral Manor
+### Cathedral Manor
 
 
 
@@ -126,7 +126,7 @@ A Unity-based endless runner mobile game featuring energy collection mechanics, 
 
 
 
-\### To The Top of The Tower
+### To The Top of The Tower
 
 
 
@@ -134,7 +134,7 @@ A turn-based deck-building strategy game developed in C++, combining card combat
 
 
 
-\### Jumping Meow
+### Jumping Meow
 
 
 
@@ -142,7 +142,7 @@ A 2D endless vertical platformer developed using C++, OpenGL, and FreeGLUT, feat
 
 
 
-\### Ana Muslim Maze Adventure
+### Ana Muslim Maze Adventure
 
 
 
@@ -150,11 +150,11 @@ An educational maze game inspired by the Ana Muslim series, designed to combine 
 
 
 
-\---
+---
 
 
 
-\## 📂 Project Structure
+## 📂 Project Structure
 
 
 
@@ -210,11 +210,11 @@ portfolio-website/
 
 
 
-\---
+---
 
 
 
-\## 🚀 Deployment
+## 🚀 Deployment
 
 
 
@@ -226,7 +226,7 @@ To run locally:
 
 
 
-1\. Clone the repository
+1. Clone the repository
 
 
 
@@ -238,19 +238,19 @@ git clone https://github.com/LaiYK02/portfolio-website.git
 
 
 
-2\. Open the project folder
+2. Open the project folder
 
 
 
-3\. Launch `index.html` using Live Server or any web browser
+3. Launch `index.html` using Live Server or any web browser
 
 
 
-\---
+---
 
 
 
-\## 👨‍💻 Author
+## 👨‍💻 Author
 
 
 
@@ -274,11 +274,11 @@ https://www.linkedin.com/in/yong-kang-lai-017167412/
 
 
 
-\---
+---
 
 
 
-\## 📄 License
+## 📄 License
 
 
 
