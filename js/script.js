@@ -296,3 +296,68 @@ if(copyCards.length && copyMessage){
     });
 
 }
+
+/* =========================
+   PROJECT NAVIGATOR
+========================= */
+
+const projectMenuBtn =
+    document.getElementById("projectMenuBtn");
+
+const projectMenu =
+    document.getElementById("projectMenu");
+
+if(projectMenuBtn && projectMenu){
+
+    projectMenuBtn.addEventListener("click", () => {
+
+        projectMenu.classList.toggle("active");
+
+    });
+
+}
+
+document
+.querySelectorAll(".project-menu a")
+.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        projectMenu.classList.remove("active");
+
+    });
+
+});
+
+const sections = document.querySelectorAll(".project-row");
+const navLinks = document.querySelectorAll(".project-menu a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 200;
+        const sectionHeight = section.offsetHeight;
+
+        if(window.scrollY >= sectionTop &&
+           window.scrollY < sectionTop + sectionHeight){
+
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+
+            link.classList.add("active");
+        }
+    });
+
+});
+
+window.dispatchEvent(new Event("scroll"));
