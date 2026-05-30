@@ -28,6 +28,25 @@ body{
     overflow-x: hidden;
 }
 
+.page-fade{
+    opacity: 0;
+    animation: pageFadeIn 0.9s ease forwards;
+}
+
+@keyframes pageFadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
 /* NAVBAR */
 
 .navbar{
@@ -56,6 +75,23 @@ body{
     transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 
     box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+
+    opacity: 0;
+    animation: navbarFade 0.8s ease forwards;
+}
+
+@keyframes navbarFade{
+
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 .navbar-hidden{
