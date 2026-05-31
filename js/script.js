@@ -253,44 +253,28 @@ if (contactForm) {
 
 }
 
-/* =========================
-   COPY EMAIL / PHONE
-========================= */
+const footerEmail = document.querySelector(".footer-email");
 
-const copyCards = document.querySelectorAll(".copy-card");
-const copyMessage = document.getElementById("copyMessage");
+if(footerEmail && copyMessage){
 
-if(copyCards.length && copyMessage){
+    footerEmail.addEventListener("click", (e) => {
 
-    copyCards.forEach(card => {
+        e.preventDefault();
 
-        card.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+            footerEmail.dataset.copy
+        );
 
-            const text = card.dataset.copy;
-            const type = card.dataset.type;
+        copyMessage.textContent =
+            "✓ Email copied successfully!";
 
-            navigator.clipboard.writeText(text);
+        copyMessage.classList.add("show");
 
-            if(type === "email"){
+        setTimeout(() => {
 
-                copyMessage.textContent =
-                    "✓ Email copied to clipboard!";
-            }
-            else{
+            copyMessage.classList.remove("show");
 
-                copyMessage.textContent =
-                    "✓ Phone number copied to clipboard!";
-            }
-
-            copyMessage.classList.add("show");
-
-            setTimeout(() => {
-
-                copyMessage.classList.remove("show");
-
-            }, 2500);
-
-        });
+        }, 2500);
 
     });
 
